@@ -10,6 +10,12 @@ $$q_i^{\theta} \;=\; q_i^{0} \;+\; h_i^{2}\,\gamma_i\,F_i\,\eta_{\theta}(\varphi
 
 where $h_i$ is the local edge length, $\gamma_i = \tanh(c\|\varphi_i^{\mathrm{curv}}\|^2) \in [0,1]$ is a curvature gate with a zero of order two on planar input, $F_i \in SO(3)$ is a covariant local frame, and $\eta_\theta$ is a small multilayer perceptron whose output is hard-bounded by $\|\eta_\theta(\varphi_i)\| \le C$.
 
+
+<img width="3137" height="1455" alt="surface_renders" src="https://github.com/user-attachments/assets/01e73fed-f528-4f51-9561-ee84daba260e" />
+
+
+
+
 The construction is guaranteed by the following proposition:
 
 For any mesh in the shape-regular class, any budget $C$, and any finite network weights, the operator satisfies four properties. Every inserted vertex satisfies $\|q_i^{\theta} - q_i^{0}\| \le C h_i^{2}$, so the operator is $O(h^2)$-proximate to Loop. The operator commutes exactly with every rigid motion. On planar input the gate vanishes and the operator reproduces Loop pointwise. At a planar valence-$k$ star the linearisation of the operator equals Loop's, so it inherits Loop's tangent eigenvalues and Reif spectral gap at that reference configuration. Proofs are in the paper.
@@ -83,7 +89,7 @@ Approximation is measured by signed-distance root-mean-square error and Hausdorf
 ## Citation
 
 If you use this implementation or the precomputed results, please cite the paper:
-> H. Ugail, Proximity-Preserving Neural Subdivision, 2026. 
+> H. Ugail, Proximity-Preserving Neural Subdivision, Under Review, 2026. 
 
 
 ## License
