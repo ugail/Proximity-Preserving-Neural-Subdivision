@@ -2,7 +2,11 @@
 
 *H. Ugail, Proximity-Preserving Neural Subdivision, Under Review, 2026.*
 
-Classical subdivision is useful because it is repeatable. A single stencil defines the whole refinement rule, the rule can be applied to its own output, and the behaviour of the resulting operator under iteration is understood. That uniformity is also the limitation, because a fixed stencil underfits localised features such as sharp ridges wherever curvature concentrates. Neural mesh refinement adapts to those features, but a network that predicts vertex positions freely is not a subdivision operator, and repeated application drives it out of the classical regime. **This is an open-source reference implementation of a trainable subdivision operator that augments Loop subdivision with a small, bounded, curvature-gated correction expressed in a covariant local frame, so that rigid-motion equivariance, affine reproduction, a quadratic proximity envelope around Loop, and planar spectral inheritance all hold by construction, for any finite network weights, before any training takes place.** The repository contains the trained checkpoints and every precomputed table, so the complete evaluation reproduces without any training.
+Classical subdivision is useful because it is repeatable. A single stencil defines the whole refinement rule, the rule can be applied to its own output, and the behaviour of the resulting operator under iteration is understood. That uniformity is also the limitation, because a fixed stencil underfits localised features such as sharp ridges wherever curvature concentrates. Neural mesh refinement adapts to those features, but a network that predicts vertex positions freely is not a subdivision operator, and repeated application drives it out of the classical regime. 
+
+**This is an open-source reference implementation of a trainable subdivision operator that augments Loop subdivision with a small, bounded, curvature-gated correction expressed in a covariant local frame, so that rigid-motion equivariance, affine reproduction, a quadratic proximity envelope around Loop, and planar spectral inheritance all hold by construction, for any finite network weights, before any training takes place.** 
+
+The repository contains the trained checkpoints and every precomputed table, so the complete evaluation reproduces without any training.
 
 For each interior edge with Loop edge vertex $q_i^{0} = \tfrac{3}{8}(p_a + p_b) + \tfrac{1}{8}(p_c + p_d)$, the inserted vertex is
 
