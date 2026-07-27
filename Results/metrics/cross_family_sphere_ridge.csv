@@ -1,0 +1,4 @@
+metric,loop,pns,improvement_pct
+sdf_rmse,0.004161,0.004104,+1.38
+sdf_rmse_near,nan,nan,+0.00
+hausdorff,0.006305,0.006304,+0.01

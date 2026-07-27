@@ -1,0 +1,12 @@
+# Proximity-Preserving Neural Subdivision
+#
+# CPU-only PyTorch is sufficient. The meshes are small and the network is a
+# two-layer multilayer perceptron, so no GPU is required for either the
+# evaluation-only run or a complete retraining run.
+
+torch>=2.0
+numpy>=1.24
+matplotlib>=3.7
+
+# Only needed to open the notebooks locally. Not required in Google Colab.
+jupyter>=1.0

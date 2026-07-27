@@ -1,0 +1,7 @@
+variant,max_prox_ratio_one_step,affine_reproduction_error,max_prox_ratio_level3,max_normal_jump_level3,sdf_near_improvement_pct
+"PNS (full, trained)",1.0000,0.000e+00,0.9994,0.3189,+20.82
+PNS with random weights,0.1367,0.000e+00,0.1233,0.1595,+1.31
+no h^2 scaling,4.1112,0.000e+00,104.6719,3.1336,+12.97
+no curvature gate,1.0000,6.556e-02,1.0000,0.4618,+23.30
+unbounded output,4.2831,0.000e+00,14.9553,3.1398,+11.65
+unconstrained multilayer perceptron,4.0687,1.261e-01,2900.2427,3.1410,+56.52

@@ -1,0 +1,7 @@
+test,quantity,expected,measured
+bounded displacement (T1),max proximity ratio,<= 1,0.073609
+SE(3)-equivariance (T2),max positional discrepancy,0,1.780e-15
+affine reproduction (T3),max departure from Loop on planar input,0,0.000e+00
+"bounded displacement, adversarial",max proximity ratio,<= 1,1.000000
+"equivariance, adversarial",max positional discrepancy,0,1.018e-15
+"affine reproduction, adversarial",max departure from Loop,0,0.000e+00
