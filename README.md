@@ -1,6 +1,6 @@
 # Proximity-Preserving Neural Subdivision
 
-*H. Ugail, Proximity-Preserving Neural Subdivision, arXiv:2608.14704, 2026. [https://doi.org/10.21203/rs.3.rs-10502756/v1*](https://arxiv.org/abs/2608.14704)
+*H. Ugail, Proximity-Preserving Neural Subdivision, arXiv:2608.14704, 2026. https://arxiv.org/abs/2608.14704
 
 Classical subdivision is useful because it is repeatable. A single stencil defines the whole refinement rule, the rule can be applied to its own output, and the behaviour of the resulting operator under iteration is understood. That uniformity is also the limitation, because a fixed stencil underfits localised features such as sharp ridges wherever curvature concentrates. Neural mesh refinement adapts to those features, but a network that predicts vertex positions freely is not a subdivision operator, and repeated application drives it out of the classical regime. 
 
@@ -93,9 +93,7 @@ Approximation is measured by signed-distance root-mean-square error and Hausdorf
 ## Citation
 
 If you use this implementation or the precomputed results, please cite the paper:
-> *H. Ugail, Proximity-Preserving Neural Subdivision, arXiv:2608.14704, 2026. [https://doi.org/10.21203/rs.3.rs-10502756/v1*](https://arxiv.org/abs/2608.14704)
-
-
+> *H. Ugail, Proximity-Preserving Neural Subdivision, arXiv:2608.14704, 2026. https://arxiv.org/abs/2608.14704
 ## License
 
 Released under the MIT License. See `LICENSE` for the full text.
